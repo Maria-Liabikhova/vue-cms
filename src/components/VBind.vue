@@ -1,5 +1,5 @@
 <template>
-  <h2><a v-bind:href="url"></a></h2>
+  <h2><a v-bind:href="url">Google</a></h2>
 </template>
 
 <script>
