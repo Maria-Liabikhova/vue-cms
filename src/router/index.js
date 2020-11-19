@@ -5,8 +5,17 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    component: () => import('../pages/Home.vue'),
+    
+  },
+  {
     path: "/DataAndMethods",
     component: () => import('../pages/DataAndMethods.vue'),
+  },
+  {
+    path: "/Events",
+    component: () => import('../pages/Events.vue'),
   },
   // {
   //   path: "/about",

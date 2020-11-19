@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <h1>Vue-cms Content Management System</h1>
+    <hr>
     <router-view />
-    <router-link to="/DataAndMethods">Practise Data And Methods</router-link>
   </div>
 </template>
 
