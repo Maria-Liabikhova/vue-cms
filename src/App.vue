@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <h1>Hello {{ message }}</h1>
+    <h2>Sum: {{ 1 + 2 }}</h2>
+    <input type="text" v-model="message">
+    <pre>{{ $data | json }}</pre>
+    <div class="student">
+      <h2>{{ sayHello() }}</h2>
+      <h2>Age {{ age }}</h2>
+      <h2>If statement: {{ isStudent ? "student" : "not a student" }}</h2>
+      <h2>Functions: {{ string.split('').reverse().join('') }}</h2>
     </div>
-    <router-view />
+    <VBind />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import VBind from '@/components/VBind'
+export default {
+  name: 'app',
+  data() {
+    return {
+      message: 'Vuejs',
+      age: '32',
+      isStudent: true,
+      name: 'Maria',
+      string: 'My name is Maria',
+    }
+  },
+  components: {
+    VBind},
+  methods: {
+    sayHello: function() {
+      return 'Hello my name is ' + this.name
     }
   }
 }
-</style>
+</script>
