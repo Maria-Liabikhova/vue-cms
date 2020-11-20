@@ -25,6 +25,10 @@ const routes = [
     path: "/KeyboardModifires",
     component: () => import('../pages/KeyboardModifires.vue'),
   },
+  {
+    path: "/Bindings",
+    component: () => import('../pages/Bindings.vue'),
+  },
   // {
   //   path: "/about",
   //   name: "About",

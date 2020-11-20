@@ -7,5 +7,6 @@
     <router-link to="/Events">Events</router-link><br>
     <router-link to="/EventModifiers">Event Modifiers</router-link><br>
     <router-link to="/KeyboardModifires">Keyboard Modifiers</router-link><br>
+    <router-link to="/Bindings">Two ways data bindings</router-link><br>
   </div>
 </template>
