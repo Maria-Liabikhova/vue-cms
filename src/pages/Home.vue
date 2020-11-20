@@ -9,5 +9,6 @@
     <router-link to="/KeyboardModifires">Keyboard Modifiers</router-link><br>
     <router-link to="/Bindings">Two ways data bindings</router-link><br>
     <router-link to="/CondRendering">Conditional Rendering</router-link><br>
+    <router-link to="/ListRendering">List Rendering</router-link><br>
   </div>
 </template>
