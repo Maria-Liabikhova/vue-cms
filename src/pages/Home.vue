@@ -6,5 +6,6 @@
     <router-link to="/DataAndMethods">Data And Methods</router-link><br>
     <router-link to="/Events">Events</router-link><br>
     <router-link to="/EventModifiers">Event Modifiers</router-link><br>
+    <router-link to="/KeyboardModifires">Keyboard Modifiers</router-link><br>
   </div>
 </template>
