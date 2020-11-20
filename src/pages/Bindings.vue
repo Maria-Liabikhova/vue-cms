@@ -19,8 +19,6 @@ export default {
     return {
       info: "Initial value "
     }    
-  },
-  methods: {
   }
 }
 </script>

@@ -29,6 +29,10 @@ const routes = [
     path: "/Bindings",
     component: () => import('../pages/Bindings.vue'),
   },
+  {
+    path: "/CondRendering",
+    component: () => import('../pages/CondRendering.vue'),
+  },
   // {
   //   path: "/about",
   //   name: "About",
