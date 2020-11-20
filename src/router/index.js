@@ -17,6 +17,10 @@ const routes = [
     path: "/Events",
     component: () => import('../pages/Events.vue'),
   },
+  {
+    path: "/EventModifiers",
+    component: () => import('../pages/EventModifiers.vue'),
+  },
   // {
   //   path: "/about",
   //   name: "About",

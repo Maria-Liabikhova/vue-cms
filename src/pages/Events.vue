@@ -5,13 +5,12 @@
     <hr>
     <h2 @mouseover="onHover" @mouseout="noHover"> Counter: {{ count }}</h2>
     <!-- <button class="events-btn" @click="count++">+1</button> -->
-    <button class="events-btn" @click="addCount">+1</button>
-    <button class="events-btn" @click="count--">-1</button>
+    <button  @click="addCount">+1</button>
+    <button  @click="count--">-1</button>
     <h2> {{ title }}<br> Result:{{ countSecond }}</h2>
-    <button class="events-btn events-btn--long" @click="addCountSecond(5, 'Changed on 5')">+5</button>
-    <button class="events-btn events-btn--long" @click="addCountSecond(10, 'Changed on 10')">+10</button>
-
-    <br><router-link to="/">Home Page</router-link>
+    <button class="events-btn" @click="addCountSecond(5, 'Changed on 5')">+5</button>
+    <button class="events-btn" @click="addCountSecond(10, 'Changed on 10')">+10</button>
+    <br><router-link class="home-link" to="/">Home Page</router-link>
   </div>
 </template>
 
@@ -50,9 +49,6 @@ export default {
 
 <style scoped>
 .events-btn {
-  margin-bottom: 40px;
-}
-.events-btn--long {
   width: 70px
   }
 </style>

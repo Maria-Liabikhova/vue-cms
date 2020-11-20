@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Vue-cms Content Management System</h1>
+    <h4>Vue-cms Content Management System</h4>
     <hr>
     <router-view />
   </div>
@@ -11,3 +11,13 @@ export default {
   name: 'app',
 }
 </script>
+
+<style>
+h1{
+  color: rgb(42, 86, 92);
+}
+.home-link {
+  margin-top: 40px;
+  position: absolute;
+}
+</style>
