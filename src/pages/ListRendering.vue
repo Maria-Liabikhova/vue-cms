@@ -17,9 +17,9 @@
     <hr>
     <ul>
       <li 
-      v-for="(key, value, index) in person"
+      v-for="(value, key, index) in person"
       :key="value.id"
-      ><em>{{index+1}}</em> <b>{{value}}</b> {{key}}</li>
+      ><em>{{index+1}}</em> <b>{{ key }}</b> {{value}}</li>
     </ul>
     <br><router-link class="home-link" to="/">Home Page</router-link>
   </div>

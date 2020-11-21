@@ -10,5 +10,6 @@
     <router-link to="/Bindings">Two ways data bindings</router-link><br>
     <router-link to="/CondRendering">Conditional Rendering</router-link><br>
     <router-link to="/ListRendering">List Rendering</router-link><br>
+    <router-link to="/ComputedPropWatch">Computed Properties and Watchers</router-link><br>
   </div>
 </template>

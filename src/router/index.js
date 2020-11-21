@@ -37,6 +37,10 @@ const routes = [
     path: "/ListRendering",
     component: () => import('../pages/ListRendering.vue'),
   },
+  {
+    path: "/ComputedPropWatch",
+    component: () => import('../pages/ComputedPropWatch.vue'),
+  },
 ];
 
 const router = new VueRouter({
