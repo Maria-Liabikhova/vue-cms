@@ -41,6 +41,10 @@ const routes = [
     path: "/ComputedPropWatch",
     component: () => import('../pages/ComputedPropWatch.vue'),
   },
+  {
+    path: "/Refs",
+    component: () => import('../pages/Refs.vue'),
+  },
 ];
 
 const router = new VueRouter({
