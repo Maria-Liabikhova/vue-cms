@@ -17,7 +17,7 @@
     <router-link to="/PassingToChild">Passing Data to Child Components</router-link><br>
     <hr>
     <h2>Parent title: {{title}} </h2>
-    <PassingToChild :parentTitle="title" :message="text" />
+    <PassingToChild  :message="text" />
   </div>
 </template>
 
