@@ -12,5 +12,7 @@
     <router-link to="/ListRendering">List Rendering</router-link><br>
     <router-link to="/ComputedPropWatch">Computed Properties and Watchers</router-link><br>
     <router-link to="/Refs">Refs and management html-elements</router-link><br>
+    <router-link to="/Binding">Binding HTML Classes</router-link><br>
+    <router-link to="/BindingInlineStyles">Binding Inline Styles</router-link><br>
   </div>
 </template>

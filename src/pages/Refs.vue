@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="refs">
     <h1>Refs and management html-elements</h1>
     <hr>
     <hr>

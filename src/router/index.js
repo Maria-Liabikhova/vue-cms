@@ -45,6 +45,14 @@ const routes = [
     path: "/Refs",
     component: () => import('../pages/Refs.vue'),
   },
+  {
+    path: "/Binding",
+    component: () => import('../pages/Binding.vue'),
+  },
+  {
+    path: "/BindingInlineStyles",
+    component: () => import('../pages/BindingInlineStyles.vue'),
+  },
 ];
 
 const router = new VueRouter({
