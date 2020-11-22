@@ -53,6 +53,10 @@ const routes = [
     path: "/BindingInlineStyles",
     component: () => import('../pages/BindingInlineStyles.vue'),
   },
+  {
+    path: "/PassingToChild",
+    component: () => import('../pages/PassingToChild.vue'),
+  },
 ];
 
 const router = new VueRouter({
