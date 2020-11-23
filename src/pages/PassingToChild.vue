@@ -7,6 +7,7 @@
     <h2>Children`s title: {{titleFromPar}} </h2>
     <p>info: {{textFromPar}}</p>
     <button @click="changeName">change name</button>
+    <button @click="changeFunk">change from parent</button>
     <br><router-link class="home-link" to="/">Home Page</router-link>
   </div>
 </template>
@@ -14,13 +15,7 @@
 <script>
 export default {
   name: 'PassingToChild',
-  props: {
-    titleFromPar: {
-      type: String,
-      default: 'WiNtEr HoLlYdAyS :)'
-    },
-    textFromPar: {}
-  },
+  props: ['titleFromPar', 'textFromPar', 'changeFunk'],
   methods: {
     changeName() {
       this.titleFromPar = "Don't forget to buy a presents for your dears"

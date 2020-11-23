@@ -19,9 +19,9 @@
     <h2>Parent: {{ parTitle }} </h2> 
     <PassingToChild :titleFromPar="parTitle" 
     :textFromPar="textPar"
+    :changeFunk="changeMadeInPar"
     @nameChange='parTitle = $event'
     />
-    <!-- <PassingToChild  :textFromPar="textPar"/> -->
   </div>
 </template>
 
@@ -33,6 +33,11 @@ export default {
     return {
       parTitle: "MERRY CHRISTMAS",
       textPar: "2021 IS THE WHITE METALLIC BULL YEAR"
+    }
+  },
+  methods: {
+    changeMadeInPar () {
+      this.parTitle = '`Rudolf`- is the name of Santa`s deer :)'
     }
   },
   components: {PassingToChild}
