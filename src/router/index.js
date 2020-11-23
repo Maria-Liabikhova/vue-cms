@@ -66,6 +66,10 @@ const routes = [
     path: "/Filters",
     component: () => import('../pages/Filters.vue'),
   },
+  {
+    path: "/ListFilters",
+    component: () => import('../pages/ListFilters.vue'),
+  },
 ];
 
 const router = new VueRouter({
