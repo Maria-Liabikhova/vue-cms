@@ -1,5 +1,6 @@
 export default {
   bind (el, bindings, vnode) {
-    el.style.color = 'green'
+    const args = bindings.arg
+    el.style[args] = bindings.value
   }
 }
