@@ -4,6 +4,7 @@
     <hr>
     <hr>
     <router-link to="/DataAndMethods">Data And Methods</router-link><br>
+    <router-link to="/VBind">VBind Method</router-link><br>
     <router-link to="/Events">Events</router-link><br>
     <router-link to="/EventModifiers">Event Modifiers</router-link><br>
     <router-link to="/KeyboardModifires">Keyboard Modifiers</router-link><br>
@@ -14,19 +15,22 @@
     <router-link to="/Refs">Refs and management html-elements</router-link><br>
     <router-link to="/Binding">Binding HTML Classes</router-link><br>
     <router-link to="/BindingInlineStyles">Binding Inline Styles</router-link><br>
-    <router-link to="/PassingToChild">Passing Data to Child Components</router-link><br>
+    <!-- <router-link to="/PassingToChild">Passing Data to Child Components</router-link><br> -->
     <hr>
     <h2>Parent: {{ parTitle }} </h2> 
     <PassingToChild :titleFromPar="parTitle" 
     :textFromPar="textPar"
     :changeFunk="changeMadeInPar"
     @nameChange='parTitle = $event'
+    @counterUpdated='counter = $event'
     />
+    <Counter />
   </div>
 </template>
 
 <script>
-import PassingToChild from './PassingToChild.vue'
+import PassingToChild from '../components/PassingToChild.vue'
+import Counter from '../components/Counter.vue'
 export default {
   name: 'Home',
   data() {
@@ -40,6 +44,6 @@ export default {
       this.parTitle = '`Rudolf`- is the name of Santa`s deer :)'
     }
   },
-  components: {PassingToChild}
+  components: {PassingToChild, Counter}
 }
 </script>

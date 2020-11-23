@@ -10,6 +10,11 @@ const routes = [
     
   },
   {
+    path: "/VBind",
+    component: () => import('../pages/VBind.vue'),
+    
+  },
+  {
     path: "/DataAndMethods",
     component: () => import('../pages/DataAndMethods.vue'),
   },
@@ -52,10 +57,6 @@ const routes = [
   {
     path: "/BindingInlineStyles",
     component: () => import('../pages/BindingInlineStyles.vue'),
-  },
-  {
-    path: "/PassingToChild",
-    component: () => import('../pages/PassingToChild.vue'),
   },
 ];
 

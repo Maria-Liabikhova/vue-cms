@@ -7,6 +7,8 @@ import VueRouter from "vue-router";
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
+export const eventEmitter = new Vue()
+
 new Vue({
   router,
   store,
