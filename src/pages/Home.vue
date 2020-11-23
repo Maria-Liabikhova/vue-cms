@@ -16,6 +16,7 @@
     <router-link to="/Binding">Binding HTML Classes</router-link><br>
     <router-link to="/BindingInlineStyles">Binding Inline Styles</router-link><br>
     <router-link to="/Directives">Directives</router-link><br>
+    <router-link to="/Filters">Filters</router-link><br>
     <hr>
     <h2>Parent: {{ parTitle }} </h2> 
     <PassingToChild :titleFromPar="parTitle" 

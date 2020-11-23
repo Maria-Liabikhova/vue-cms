@@ -62,6 +62,10 @@ const routes = [
     path: "/Directives",
     component: () => import('../pages/Directives.vue'),
   },
+  {
+    path: "/Filters",
+    component: () => import('../pages/Filters.vue'),
+  },
 ];
 
 const router = new VueRouter({

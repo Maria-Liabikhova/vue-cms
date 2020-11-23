@@ -7,6 +7,9 @@ import MyDirective from "./color";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+Vue.filter('snippet', (value) => {
+  return value.slice(0,7)
+});
 
 Vue.directive('colored', MyDirective)
 
