@@ -16,8 +16,12 @@
     <router-link to="/BindingInlineStyles">Binding Inline Styles</router-link><br>
     <router-link to="/PassingToChild">Passing Data to Child Components</router-link><br>
     <hr>
-    <h2>Parent title: {{title}} </h2>
-    <PassingToChild  :message="text" />
+    <h2>Parent: {{ parTitle }} </h2> 
+    <PassingToChild :titleFromPar="parTitle" 
+    :textFromPar="textPar"
+    @nameChange='parTitle = $event'
+    />
+    <!-- <PassingToChild  :textFromPar="textPar"/> -->
   </div>
 </template>
 
@@ -27,8 +31,8 @@ export default {
   name: 'Home',
   data() {
     return {
-      title: "Merry Christmas",
-      text: "2021 year is the year of the white metal bull",
+      parTitle: "MERRY CHRISTMAS",
+      textPar: "2021 IS THE WHITE METALLIC BULL YEAR"
     }
   },
   components: {PassingToChild}
