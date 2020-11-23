@@ -58,6 +58,10 @@ const routes = [
     path: "/BindingInlineStyles",
     component: () => import('../pages/BindingInlineStyles.vue'),
   },
+  {
+    path: "/Directives",
+    component: () => import('../pages/Directives.vue'),
+  },
 ];
 
 const router = new VueRouter({

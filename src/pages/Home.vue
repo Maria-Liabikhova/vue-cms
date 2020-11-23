@@ -15,7 +15,7 @@
     <router-link to="/Refs">Refs and management html-elements</router-link><br>
     <router-link to="/Binding">Binding HTML Classes</router-link><br>
     <router-link to="/BindingInlineStyles">Binding Inline Styles</router-link><br>
-    <!-- <router-link to="/PassingToChild">Passing Data to Child Components</router-link><br> -->
+    <router-link to="/Directives">Directives</router-link><br>
     <hr>
     <h2>Parent: {{ parTitle }} </h2> 
     <PassingToChild :titleFromPar="parTitle" 

@@ -3,9 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import VueRouter from "vue-router";
+import MyDirective from "./color";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+
+Vue.directive('colored', MyDirective)
 
 export const eventEmitter = new Vue()
 
